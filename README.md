@@ -49,14 +49,27 @@ git rm -r --cached .
 #### Annuler le suivi d'un seul fichier sans push
 git rm -r --cached [nom_fichier] ou [dossier]
 
+Sous domaine Surge
+[Auth-Dev](https://authentic-dev-group.surge.sh)
+
 
 ----------------------------------------------------------------------------------
 
 Tailwind Doc
-
+```
 Breakpoint prefix	Minimum width	CSS
 sm	40rem (640px)	@media (width >= 40rem) { ... }
 md	48rem (768px)	@media (width >= 48rem) { ... }
 lg	64rem (1024px)	@media (width >= 64rem) { ... }
 xl	80rem (1280px)	@media (width >= 80rem) { ... }
 2xl	96rem (1536px)	@media (width >= 96rem) { ... }
+```
+
+#### Recuperer les derniers pushs
+`git remote add upstream https://github.com/ATHENTIC-DEV/authDevFront.git`
+
+
+`git fetch upstream`
+`git checkout -b developer upstream/developer`
+`git push origin developer`
+
